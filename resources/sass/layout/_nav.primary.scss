@@ -1380,25 +1380,25 @@ html[data-color='dark-lime'],
 html[data-color='dark-sky'],
 html[data-color='dark-teal'] {
   .logo .img {
-    background-image: url(../img/logo/logo-light.svg);
+    background-image: url(/img/logo/logo-light.svg);
   }
 }
 
 html[data-color='light-sky'] {
   .logo-default {
-    background-image: url(../img/logo/logo-sky-light.svg);
+    background-image: url(/img/logo/logo-sky-light.svg);
   }
 }
 
 html[data-color='light-blue'] {
   .logo-default {
-    background-image: url(../img/logo/logo-blue-light.svg);
+    background-image: url(/img/logo/logo-blue-light.svg);
   }
 }
 
 html[data-color='light-green'] {
   .logo-default {
-    background-image: url(../img/logo/logo-green-light.svg);
+    background-image: url(/img/logo/logo-green-light.svg);
   }
 }
 

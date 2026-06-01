@@ -32,7 +32,8 @@
 @yield('css')
 <!-- Vendor Styles End -->
 <!-- Template Base Styles Start -->
-<link rel="stylesheet" href="/css/styles.css"/>
-<link rel="stylesheet" href="/css/main.css"/>
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+{{--<link rel="stylesheet" href="/css/styles.css"/>--}}
+{{--<link rel="stylesheet" href="/css/main.css"/>--}}
 <!-- Template Base Styles End -->
 <script src="/js/base/loader.js"></script>
