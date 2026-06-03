@@ -8,3 +8,7 @@ import 'bootstrap';
 window.Alpine = Alpine;
 
 Alpine.start();
+
+// Import Tom Select
+import TomSelect from 'tom-select';
+window.TomSelect = TomSelect;
