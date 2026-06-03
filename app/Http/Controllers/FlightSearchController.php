@@ -13,7 +13,10 @@ class FlightSearchController extends Controller
     {
         $this->duffelService = $duffelService;
     }
-
+    public function index()
+    {
+        return view('flights.index');
+    }
     public function sample1()
     {
         return view('flights.sample1');
@@ -22,6 +25,11 @@ class FlightSearchController extends Controller
     public function home()
     {
         return view('flights.home');
+    }
+
+    public function home1()
+    {
+        return view('flights.home1');
     }
 
     public function search1()
