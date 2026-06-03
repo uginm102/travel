@@ -35,4 +35,10 @@ return [
         ],
     ],
 
+    'duffel' => [
+        'token' => env('DUFFEL_ACCESS_TOKEN'),
+        'version' => env('DUFFEL_API_VERSION', 'v1'),
+        'base_url' => 'https://api.duffel.com/',
+    ],
+
 ];

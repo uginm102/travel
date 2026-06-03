@@ -1,8 +1,21 @@
 <?php
 
+use App\Http\Controllers\FlightSearchController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/flights', function () {
+    return view('pages.home');
+})->name('home');
+
+Route::get('/flights/search', function () {
+    return view('pages.search');
+})->name('flights.search');
+
+Route::get('/test-flights', [FlightSearchController::class, 'search']);
+Route::get('/test-flights1', [FlightSearchController::class, 'sample1']);
+Route::get('/flights-home', [FlightSearchController::class, 'home']);
+Route::get('/flights-search', [FlightSearchController::class, 'search1']);
 //Route::get('/', function () {
 //    return view('welcome');
 //});
@@ -28,7 +41,7 @@ Route::redirect('/', '/Dashboards/Default');
 |
 */
 Route::prefix('Dashboards')->group(function () {
-    Route::view('/', 'dashboards/index');
+    Route::view('/', 'dashboards/index')->name('dashboards');
     Route::view('Default', 'dashboards/default');
     Route::view('Visual', 'dashboards/visual');
     Route::view('Analytic', 'dashboards/analytic');
@@ -235,4 +248,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-//require __DIR__.'/auth.php';
+require __DIR__.'/auth.php';
